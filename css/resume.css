@@ -1,0 +1,64 @@
+#check-resume{
+  margin-top: 80px;
+}
+
+#resume-section {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: rgb(241, 240, 238);
+}
+
+#profile-picture {
+	max-width: 150px;
+}
+
+#social-media-section {
+	margin-top: 5px;
+}
+
+#name {
+	margin-top: 10px;
+}
+
+.align-right{
+  display: inline-block;
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.resume-category-title {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-weight: 300;
+}
+
+.project-link{
+  color: #c30000 !important;
+}
+
+#personal-information-section{
+	border-bottom: 2.0px solid #C63D0F
+}
+
+.course-name{
+    padding-left: 10px;
+}
+
+ul{
+  padding-left: 20px;
+}
+
+ol{
+  padding-left: 20px;
+}
+
+table {
+  padding-left: 20px;
+}
+
+th {
+  font-weight: normal;
+}

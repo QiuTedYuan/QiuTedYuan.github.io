@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Comp 3711 tutorial page">
+      <meta name="author" content="Yuan Qiu">
+      <meta name="description" content="Design and analysis of algorithms">
+      <meta name="keywords" content="Yuan Qiu, Yuan, COMP3711H, 3711H, tutorial">
+      <title>COMP 3711H tutorial | Yuan Qiu</title>
+      <!-- Bootstrap core CSS -->
+      <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
+      <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+
+      <link href="./css/dropdowns-enhancement.min.css" rel="stylesheet">
+      <link href="./css/bootstrap.icon-large.min.css" rel="stylesheet">
+
+      <!-- Custom styles for this template -->
+      <link href="./css/main-page.css" rel="stylesheet">
+      <link href="./css/tutorial.css" rel="stylesheet">
+      <link href="./img/cselogo.png" rel="icon">
+      <script src="./js/jquery-1.11.0.min.js"></script>
+      <script src="./js/load.js"></script>
+      <script async src="./js/busuanzi.pure.mini.js"></script>
+
+      <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+  <!--navigation section-->
+  <section class="nav-section container-fluid" id='navigation-section'>
+  </section><!--/end navigation section-->
+
+    <!--content section-->
+    <div class="container-fluid">
+      <section class="row tuto-introduction">
+	        <div class="col-xs-12 col-sm-10 col-md-6 col-lg-6
+			    col-sm-offset-1 col-md-offset-3 col-lg-offset-3">
+		  <h1 class="section-title text-center">COMP 3711H Tutorial</h1>
+          <p>This site is non-official and experimental only! Do not refer to this if you are finding materials to prepare for you exams!</p>
+          <p>However, if you do want to know something interesting, have fun!</p>
+		</div>
+      </section>
+
+      <section class="row tuto-body">
+	<div class="container-fluid">
+	  <div class="row">
+	    <h1 class="section-title text-center">Frequently Asked Questions </h1>
+	  </div>
+	  
+	  <div class="row">
+	    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8
+			col-sm-offset-1 col-md-offset-2 col-lg-offset-2">
+          <h2>From tutorial 3:</h2>
+	      <h3 class="text-center">1. Sequences</h3>
+	      <p>There are 4 types of sequences that you need to know how to calculate the sum. Following we assume the sequences start with index 1. Also assume d is not 0 and q is not 1 (the degenerate case). </p>
+	      <ol>
+		<li><a href="https://en.wikipedia.org/wiki/Arithmetic_progression" target="_blank">Arithmetic Sequences</a> (等差数列 in Chinese)</li>
+		<img src="http://latex.codecogs.com/gif.latex?a_n=a_1&plus;(n-1)d,&space;S_n=\frac{(a_1&plus;a_n)*n}{2}" title="a_n=a_1+(n-1)d, S_n=\frac{(a_1+a_n)*n}{2}" />
+		<li><a href="https://en.wikipedia.org/wiki/Geometric_progression" target="_blank">Geometric Sequences</a> (等比数列 in Chinese)</li>
+		<img src="http://latex.codecogs.com/gif.latex?a_n=a_1q^{n-1},&space;S_n=\frac{a_1(1-q^n)}{1-q}" title="a_n=a_1q^{n-1}, S_n=\frac{a_1(1-q^n)}{1-q}" />
+		<li><a href="https://en.wikipedia.org/wiki/Arithmetico%E2%80%93geometric_sequence" target="_blank">Arithmetico-geometric Sequences</a> (等差等比数列 in Chinese)</li>
+		<img src="http://latex.codecogs.com/gif.latex?a_n=[a&plus;(n-1)d]bq^{n-1}" title="a_n=[a+(n-1)d]bq^{n-1}" />
+		<img src="http://latex.codecogs.com/gif.latex?S_n=\frac{a-[a&plus;(n-1)d]q^n}{1-q}&plus;\frac{dq(1-q^{n-1})}{(1-q)^2}" title="S_n=\frac{a-[a+(n-1)d]q^n}{1-q}+\frac{dq(1-q^{n-1})}{(1-q)^2}" />
+		<p>For the derivation of the above equation, you can refer to the Wiki site.</p>
+		<li><a href="https://en.wikipedia.org/wiki/Harmonic_progression_(mathematics)" target="_blank">Harmonic Sequences</a> (调和数列 in Chinese)</li>
+		<p>You should know the special case:</p>
+		<img src="http://latex.codecogs.com/gif.latex?a_n=\frac{1}{n},&space;S_n=\ln{n}&plus;C&plus;\epsilon_n" title="a_n=\frac{1}{n}, S_n=\ln{n}+C+\epsilon_n" />
+		<p>Where C is a constant and the remainder is infinitely small.</p>
+	      </ol>
+	      <p>If you find it hard to remember the formulas, there is a trick! When Geometric Sequence is involved (2&3), the Sum has the same asymptotic notation as the largest term in the sequence!</p> 
+	    </div>
+	  </div>
+	  
+	  <div class="row">
+	    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8
+			col-sm-offset-1 col-md-offset-2 col-lg-offset-2">
+	      <h3 class="text-center">2. Asymptotic notation</h3>
+          <p>0'. For little o, little omega and related issues, refer to <a href="https://en.wikipedia.org/wiki/Big_O_notation#Related_asymptotic_notations" target="_blank">here</a>.</p> 
+	      <p>1'. Note that we usually asks you for the "tightest" bound possible unless otherwise specified. For example, you can say insertion sort runs in O(n^100) but it's not tight. But the fact that the bound is tight does not necessarily mean you can replace O with Theta. If you say insertion sort runs in Theta(n^2) for any input it will be wrong, because it takes only O(n) if the array is already sorted.</p>
+	      <p>2'. The "=" sign used in Asymptotic notations actually means "is" instead of "equals", which is not commutative. You can say O(n)=O(n^2) but the reverse will be wrong.</p>
+	      <p>3'. If you write stuffs like O(f(n))+O(g(n))=O(f(n)+g(n)), you may get a not-so-tight bound. See the following example.</p>
+	      <img class="text-center" src="http://latex.codecogs.com/gif.latex?T(1)=1,T(n)=T(\frac{n}{2})&plus;O(n)" title="T(1)=1,T(n)=T(\frac{n}{2})+O(n)" />
+	      <p>A wrong way of doing it will be getting log(n) O(n)'s after expension, and result in O(n*logn). To do it correctly, there must be a "c" such that</p>
+	      <img class="text-center" src="http://latex.codecogs.com/gif.latex?T(n)\leq&space;T(\frac{n}{2})&plus;cn" title="T(n)\leq T(\frac{n}{2})+cn" />
+	      <p>Working from this ineqality will give you O(n).</p>
+	    </div>
+	  </div>
+
+	  <div class="row">
+	    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8
+			col-sm-offset-1 col-md-offset-2 col-lg-offset-2">
+	      <h3 class="text-center">3. About log(n!)</h3>
+	      <p>Using <a href="https://en.wikipedia.org/wiki/Stirling%27s_approximation" target="_blank">Stirling's approximation</a>, you know</p>
+            <a href="http://www.codecogs.com/eqnedit.php?latex=\log&space;{n!}=n\log{n}-\log{e}\cdot&space;n&plus;O(\log{n})=\Theta(n\log{n})" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\log&space;{n!}=n\log{n}-\log{e}\cdot&space;n&plus;O(\log{n})=\Theta(n\log{n})" title="\log {n!}=n\log{n}-\log{e}\cdot n+O(\log{n})=\Theta(n\log{n})" /></a>
+          <p>But you can also compute the bounds from scratch.</p>
+	      <p>For the upper bound it's easy.</p>
+          <a href="http://www.codecogs.com/eqnedit.php?latex=n!=n\cdot(n-1)\cdot\dots\cdot&space;1\leq&space;n\cdot&space;n\cdot\dots\cdot&space;n=n^n,&space;\log{n!}\leq&space;\log{n^n}=nlogn" target="_blank"><img src="http://latex.codecogs.com/gif.latex?n!=n\cdot(n-1)\cdot\dots\cdot&space;1\leq&space;n\cdot&space;n\cdot\dots\cdot&space;n=n^n,&space;\log{n!}\leq&space;\log{n^n}=nlogn" title="n!=n\cdot(n-1)\cdot\dots\cdot 1\leq n\cdot n\cdot\dots\cdot n=n^n, \log{n!}\leq \log{n^n}=nlogn" /></a>
+	      <p>For the lower bound, it is not tedius.</p>
+          <a href="http://www.codecogs.com/eqnedit.php?latex=n!=n\cdot(n-1)\cdot\dots\cdot&space;1\geq&space;n\cdot(n-1)\cdot\dots\cdot(n/2)>=(n/2)^{n/2},\\&space;\log{n!}\geq&space;\log{(n/2)^{n/2}}=(n/2)\cdot(\log{n}-\log{2})=\Omega(n\log{n})." target="_blank"><img src="http://latex.codecogs.com/gif.latex?n!=n\cdot(n-1)\cdot\dots\cdot&space;1\geq&space;n\cdot(n-1)\cdot\dots\cdot(n/2)>=(n/2)^{n/2},\\&space;\log{n!}\geq&space;\log{(n/2)^{n/2}}=(n/2)\cdot(\log{n}-\log{2})=\Omega(n\log{n})." title="n!=n\cdot(n-1)\cdot\dots\cdot 1\geq n\cdot(n-1)\cdot\dots\cdot(n/2)>=(n/2)^{n/2},\\ \log{n!}\geq \log{(n/2)^{n/2}}=(n/2)\cdot(\log{n}-\log{2})=\Omega(n\log{n})." /></a>
+	    </div>
+	  </div>
+
+	  <div class="row">
+	    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8
+			col-sm-offset-1 col-md-offset-2 col-lg-offset-2">
+	      <h3 class="text-center">4. Lower bound on finding both max and min</h3>
+          <p>In the tutorial we said finding both max and min can be done in 3n/2+c comparisons. This is indeed an lower bound. Why?</p>
+          <p>Let's play a game. You design an algorithm and I will give you an input. You want to minimize the comparisons and I will maximize it. If you want to compare 2 numbers, I tell you the result. If x>y, x wins and y loses.</p>
+          <p>At any state of your algorithm, you have the following 4 kinds of numbers:</p>
+          <ol>
+            <li> a items have not been involved in any comparison. </li>
+            <li> b items involved and have not lost yet. </li>
+            <li> c items involved and have not win yet.</li>
+            <li> d items won and lost at least 1. </li>
+          </ol>
+          <p>Obviously a+b+c+d=n are all the numbers. My strategy is the following for each comparison.</p>
+          <ul>
+            <li> (1,1): Anyway it becoms (2,3).</li>
+            <li> (1,2): 2 wins. So the state becomes (3,2).</li>
+            <li> (1,3): 1 wins, so the state becomes (2,3).</li>
+            <li> (1,4): Anyway it becomes (2,4) or (3,4).</li>
+            <li> (2,3): 2 wins, still (2,3). </li>
+            <li> (2,4): 2 wins, still (2,4). </li>
+            <li> (3,4): 4 wins, still (3,4). </li>
+          </ul>
+          <p>The logic is that: if you haven't won, then I try not to let you win. If you havn't lost, I try not to let you lose. This will maximize the comparisons. Consider the magic number 3a+2b+2c. At the beginning it is equal to 3n, when your algorithm finishes it has to be 2. Check that each of the above comparison decrease this number at most 2 at a time (first case). A total decrease of (3n-2) requires at least 3n/2-1 comparisons.</p>
+	    </div>
+	  </div>
+
+      </section><!--./end body-->
+
+      <section class="row tuto-introduction">
+	<div class="container-fluid">
+	  <div class="row">
+	    <h1 class="section-title text-center">Interesting stuffs</h1>
+	  </div>
+
+	  <div class="row c1">
+	    <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10
+			col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+	      <div class="text-center">
+		<h3>1. <a href="https://en.wikipedia.org/wiki/Bogosort" target="_blank">Bogo Sort</a> ("Stupid Sort")</h3>
+		<p>(Randomly or deterministicly) Generate permutations of the input until it finds one that is sorted.</p>
+		<div>
+		  <table style="font-size:16px">
+		    <tr>
+		      <td>Running Time</td>
+		      <td>Best Case</td>
+		      <td>Worst Case</td>
+		      <td>Average Case</td>
+		    </tr>
+		    <tr>
+		      <td>Deterministic Version</td>
+		      <td>O(n)</td>
+		      <td>O((n+1)!)</td>
+		      <td>O((n+1)!)</td>
+		    </tr>
+		    <tr>
+		      <td>Randomized Version</td>
+		      <td>O(n)</td>
+		      <td>Unbounded</td>
+		      <td>O((n+1)!)</td>
+		    </tr>
+		  </table>
+		</div>
+		<p>Somehow explains why we do "Worst Case Analysis".</p>
+		<p>But it can be done in O(n) on a "Quantum Computer"! (Just a joke XD)</p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="row c2">
+	    <div class="col-xs-12 col-sm-10 col-md-6 col-lg-6
+			col-sm-offset-1 col-md-offset-3 col-lg-offset-3">
+	      <div class="text-center">
+		<h3>2. <a href="http://rosettacode.org/wiki/Sorting_algorithms/Sleep_sort" target="_blank">Sleep Sort</a></h3>
+	      </div>
+	      <p>Suppose you have abundant processors. Let each processor hold a number "x". With all starting at the same time, this processor will "sleep" for x rounds. It immediately outputs the number after it "wakes up".</p>
+	      <p>The running time "is" (not rigorous) O(n+max{input}).</p>
+	    </div>
+	  </div>
+
+	  <div class="row c1">
+	    <div class="text-center">
+	      <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10
+			  col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+		<h3>3. Visualization of sorting algorithms (with sound effects).</h3>
+		<div style="float:left; width:50%">
+		  <iframe width="80%" height="315" src="https://www.youtube.com/embed/kPRA0W1kECg" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div style="float:right; width:50%">
+		  <iframe width="80%" height="315" src="https://www.youtube.com/embed/?listType=playlist&list=PLuE79vNc5Wi6q34LsQcaJ7ISQ8uOyMaL_" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<p> </p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="row c2">
+	    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8
+			col-sm-offset-1 col-md-offset-2 col-lg-offset-2">
+	      <div class="text-center">
+		<h3>4. <a href="https://brilliant.org/wiki/egg-dropping/" target="_blank">Egg Dropping Puzzle</a></h3>
+	      </div>
+	      <p>As a special case, suppose there are 2 eggs and a 100-floor building. You want to test from which floor on the egg will break when you drop it to the ground.</p>
+	      <p>If you think of doing a "binary search", the problem is, if the egg broke on the 50-th floor, you have to go one-by-one for the second egg, the total number becomes 1+49=50 in the worst case.</p>
+	      <p>The idea is to divide the 100 floors into sqrt(100)=10 blocks, each containing sqrt(100)=10 floors. Use the first egg to locate the block and the second to locate the exact floor. The worst case is then 10+10=20.</p>
+	      <p>Challenge: What if there are more floors? More eggs?</p>
+	      <p>There is also a DP solution which you can find in the link.</p>
+	    </div>
+	  </div>
+
+	  <div class="row c1">
+	    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8
+			col-sm-offset-1 col-md-offset-2 col-lg-offset-2">
+	      <div class="text-center">
+		<h3>5. <a href="https://en.wikipedia.org/wiki/Secretary_problem" target="_blank">Secretary Problem</a></h3>
+	      </div>
+	      <p>You are going to hire exactly 1 secretarty out of n applicants that you can rank between. Each applicant will be interviewed one by one and you must decide whether to hire her before interviewing the next one. You want to maximize the probability that you hire the best of the n applicants.</p>
+	      <p>The optimal strategy is to skip the first ~n/e applicants and pick the first applicant that outperforms all the skipped ones.</p>
+	      <p>If you are the best, try not to be the first ~n/e in this interview XD.</p>
+	      <p>This problem is closely related to the hiring problem.</p>
+	    </div>
+	  </div>
+
+	  <div class="row c2">
+	    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8
+			col-sm-offset-1 col-md-offset-2 col-lg-offset-2">
+	      <div class="text-center">
+		<h3>6. 0-1 Knapsack Problem</h3>
+	      </div>
+	      <p>You are given n items, each having value vi and weight wi. You are also given a knapsack that can hold at most W units of weight. You want to select some items and maximize the value you get. This problem is interesting because:</p>
+	      <p>1, Greedy algorithms can not solve the problem. Please think of counter examples for the following algorithms:</p>
+	      <ol>
+		<li>Always pick the most valuable item possible. (max vi)</li>
+		<li>Always pick the lightest item possible. (min wi)</li>
+		<li>Always pick the heightest "unit value" item possible. (max vi/wi)</li>
+	      </ol>
+	      <p>2, There is a Dynamic Programming Solution to the problem, which runs in O(nW).</p>
+	      <p>Question: Is this a polynomial time algorithm?</p>
+	      <p>Answer: No! To input the number W, you only need Theta(log(W)) bits. Thus the input size is (n+log(W)). The factor W is expotional in input size.</p>
+	      <p>3, It is actually an NP-Complete problem! The decisional version of the problem is:</p>
+	      <p>Given the problem setting, is there a valid set of items that has value at least V?</p>
+	      <p>It is NP because if there is a solution, we can calculate its value and weight in O(n) time and make sure it satisfy the requirements.</p>
+	      <p>It is NP-Hard because it can be reduced from the "number partitioning" problem. Assign each item (vi,wi)=(xi,xi). Set both the weight constraint and value target to be W=V=sum(xi)/2.</p>
+	    </div>
+	  </div>
+
+	  <div class="row c1">
+	    <div class="text-center">
+	      <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8
+			  col-sm-offset-1 col-md-offset-2 col-lg-offset-2">
+		<h3>7. An interesting introduction to P/NP</h3>
+		<div style="float:left; width:100%">
+		  <iframe width="80%" height="420" src="https://www.youtube.com/embed/YX40hbAHx3s" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<p> </p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="row c2">
+	    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8
+		 col-sm-offset-1 col-md-offset-2 col-lg-offset-2">
+	      <h3 class="text-center">8. Matrix Multiplication</h3>
+	      <p>An very interesting and important problem. The naive <a href="https://en.wikipedia.org/wiki/Matrix_multiplication_algorithm#Divide_and_conquer_algorithm" target="_blank">divide and conquer</a> algorithm can divide it into 8 subproblems, thus run in O(n^3).</p>
+	      <p><a href="https://en.wikipedia.org/wiki/Strassen_algorithm" target="_blank">Strassen's algorithm</a> divides the problem into 7 subproblems instead. The power factor is reduced to log2(7)=2.8. Currently the best algorithm achieves n^2.37, but the conjecture is that this is still not the best.</p>
+	    </div>
+	  </div>
+
+	  
+	</div>
+      </section><!--./end body-->
+
+      <section class="row tuto-body">
+	<div class="container-fluid">
+	  <div class="row">
+	    <h1 class="section-title text-center">Useful Tools</h1>
+	  </div>
+	  <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10
+                      col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 text-center">
+	    <p>1. Data Structure and Algorithm Visualization (<a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html" target="_blank">Link1</a>)(<a href="https://visualgo.net/en" target="_blank">Link2</a>).</p>
+	    <p>2. Technical interview resources (<a href="https://sites.google.com/site/nyocoachingsessions/technical-interview-resources" target="_blank">Link</a>).</p>
+	    <p>3. Convert LaTeX to pictures (<a href="http://www.codecogs.com/latex/eqneditor.php" target="_blank">Link</a>).</p>
+	    <p>4. Convert written formulas to LaTeX scripts (<a href="http://webdemo.myscript.com/views/math.html" target="_blank">Link</a>).</p>
+	    <p>5. Learn LaTeX in 30 minutes (<a href="https://www.sharelatex.com/learn/Learn_LaTeX_in_30_minutes" target="_blank">Link</a>). Good for your reports!</p>
+	    <p>6. Linear Algebra Toolkits (<a href="http://www.math.odu.edu/~bogacki/cgi-bin/lat.cgi" target="_blank">Link</a>).</p>
+	    <p>7. User Friendly Graphing tool (<a href="https://www.desmos.com/calculator" target="_blank">Link</a>).</p>
+	  </div>
+	</div>
+      </section><!--./end body-->
+
+      
+      <!--http://lorenzoverzini.com/?page_id=14-->
+      <section class="row" id="contact-section">
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10
+                    col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 text-center">
+          <img src="./img/contact.png" alt="contact icon" class="">
+          <h5>GET IN CONTACT</h5>
+          <h2>
+            Yuan Qiu </br>
+            <a href="http://pathadvisor.ust.hk/?&floor=4&scale=1&offsetX=1941&offsetY=1968" target="_blank">Room 4209, Academic Building </a></br>
+            <a href="mailto:yqiuac@connect.ust.hk">yqiuac@connect.ust.hk</a>
+          </h2>
+          <a href="https://www.facebook.com/qiu.ted.yuan" target="_blank">
+            <img src="./img/facebook.png" alt="facebook" class="social-media-icon" >
+          </a>
+          <!--icon source https://www.iconfinder.com/iconsets/xmas-social-networks-->
+          <a href="https://www.linkedin.com/in/%E8%BF%9C-%E9%82%B1-83651910a/" target="_blank">
+            <img src="./img/linkedin.png" alt="linkedin" id="linkedin-icon" class="social-media-icon">
+          </a>
+          <a href="https://github.com/QiuTedYuan" target="_blank">
+              <img src="./img/github.png" alt="github" class="social-media-icon">
+          </a>
+          <h5>Jan. 30 2018</h5>
+          <span id="busuanzi_container_site_pv">
+            Total Visit <span id="busuanzi_value_site_pv"></span> Times
+          </span>
+
+        </div>
+      </section><!--website footer-->
+    </div>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dropdowns-enhancement.js"></script>
+  </body>
+</html>
