@@ -19,7 +19,7 @@ $(document).ready(function() {
             <li class="cative" id="index"><a href="index.html">Home</a></li>
             <li class="cative" id="resume"><a href="resume.html">Resume</a></li>
             <li class="cative" id="gallery"><a href="gallery.html">Gallery</a></li>
-            <li class="cative" id="3711"><a href="3711.html">Comp 3711</a></li>
+            <li class="cative" id="blog"><a href="blog/index.html">Blog</a></li>
           </ul>
         </div>
       </div>
@@ -62,8 +62,8 @@ $(document).ready(function() {
 		case "gallery.html":
     		document.getElementById("gallery").className = "active";
     		break;
-        case "3711.html":
-            document.getElementById("3711").className = "active";
-            break;
+//        case "3711.html":
+//           document.getElementById("3711").className = "active";
+//            break;
 	}
 });
