@@ -79,13 +79,13 @@ body {
 	text-decoration: none;
 }
 
-#technical-writing-section {
+#writing-section {
     background-color: rgb(241, 240, 238);
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
 
-#technical-writing-section a {
+#writing-section a {
 	color: rgba(0, 0, 0, 1);
 }
 
@@ -93,28 +93,20 @@ body {
 	font-weight: 400;	
 }
 
-#ios-app-section {
+#industry-section {
 	padding-top: 30px;
-	background-color:rgba(255, 212, 100, 1);
+	background-color:rgb(138, 150, 157);
 	padding-bottom: 50px;
 }
 
-#ios-app-section a {
+#industry-section a {
 	color: rgba(0, 0, 0, 1);
 }
 
-.app-title {
-	font-weight: 400;	
-}
-
-#software-section {
+#teaching-section {
 	padding-top: 30px;
 	background-color: rgb(241, 240, 238);
 	padding-bottom: 30px;
-}
-
-.software-title {
-	font-weight: 400;	
 }
 
 #contact-section {
