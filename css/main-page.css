@@ -80,7 +80,7 @@ body {
 }
 
 #writing-section {
-    background-color: rgb(241, 240, 238);
+    background-color: rgb(240, 240, 240);
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
@@ -95,17 +95,18 @@ body {
 
 #industry-section {
 	padding-top: 30px;
-	background-color:rgb(138, 150, 157);
+	background-color:rgb(230, 230, 230);
 	padding-bottom: 50px;
 }
 
 #industry-section a {
 	color: rgba(0, 0, 0, 1);
+	border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 
 #teaching-section {
 	padding-top: 30px;
-	background-color: rgb(241, 240, 238);
+	background-color: rgb(240, 240, 240);
 	padding-bottom: 30px;
 }
 
@@ -132,3 +133,7 @@ body {
 	text-decoration: none;
 }
 
+.align-right{
+  display: inline-block;
+  float: right;
+}
