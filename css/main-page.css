@@ -137,3 +137,11 @@ body {
   display: inline-block;
   float: right;
 }
+
+.circle {
+    border: 2px solid red;
+    background-color: #FFFFFF;
+    height: 100px;
+    border-radius:50%;
+    width: 100px;
+}
