@@ -25,31 +25,6 @@ $(document).ready(function() {
       </div>
     </nav>
        `;
-//      <div class="row">
-//        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8
-//                    col-md-offset-2 col-lg-offset-2" id="navigation">
-//	      <nav role="navigation" id="navigation-part"> \
-//		  <ul class="nav nav-justified text-center"> \
-//		    <li id="index"><a href="index.html">HOME</a></li>
-//	            <li id="resume"><a href="resume.html">RESUME</a></li>
-//                <li id="gallery"><a href="gallery.html">GALLERY</a></li>
-//	            <li id ="comp3711"><a href="3711.html">COMP 3711</a></li>
-//		    <!--li id="comp5421" role="presentation" class="dropdown">
-//		      <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-//		        COMP5421 <span class="caret"></span>
-//		      </a>
-//		      <ul class="dropdown-menu bullet pull-center" role="menu">
-//		        <li><a href="5421/iscissors/index.html">Intelligent Scissors</a></li>
-//		        <li><a href="5421/face/index.html">Face Detection</a></li>
-//		        <li><a href="5421/svm/index.html">Single View Modeling</a></li>
-//	                <li><a href="5421/photo/index.html">Multi-View Modeling</a></li>
-//		      </ul>
-//	            </li-->
-//		  </ul>
-//		</nav>
-//	    </div>
-// 	</div>
-//	`;
 	var path = window.location.pathname;
 	var page = path.split("/").pop();
 	switch (page) {
@@ -62,8 +37,29 @@ $(document).ready(function() {
 		case "gallery.html":
     		document.getElementById("gallery").className = "active";
     		break;
-//        case "3711.html":
-//           document.getElementById("3711").className = "active";
-//            break;
 	}
+  // Load footer
+  document.getElementById("contact-section").innerHTML = `
+     <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 text-center">
+        <img src="./img/contact.png" alt="contact icon" class="">
+        <h3>CONTACT</h3>
+        <h2>
+        Dr. Yuan Qiu <br>
+        (65) 848O 9O31<br>
+        (yuan.qiu＠cnrsatcreate.sg)<br>
+        .replace("＠","@")
+        </h2>
+        <a href="https://www.facebook.com/qiu.ted.yuan" target="_blank">
+            <img src="./img/facebook.png" alt="facebook" class="social-media-icon">
+        </a>
+        <!--icon source https://www.iconfinder.com/iconsets/xmas-social-networks-->
+        <a href="https://www.linkedin.com/in/yuan-qiu-83651910a/" target="_blank">
+            <img src="./img/linkedin.png" alt="linkedin" id="linkedin-icon" class="social-media-icon">
+        </a>
+        <a href="https://github.com/QiuTedYuan" target="_blank">
+            <img src="./img/github.png" alt="github" class="social-media-icon">
+        </a>
+        <h5>14 Aug 2024</h5>
+     </div>
+     `;
 });
