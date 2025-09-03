@@ -89,8 +89,8 @@ $(document).ready(function () {
 			<h3>CONTACT</h3>
 			<h2>
 			Dr. Yuan Qiu <br>
-			(65) 848O 9O31<br>
-			(yuan.qiu＠cnrsatcreate.sg)<br>
+			(86) 191 O656 1976<br>
+			(yuanqiu＠seu.edu.cn)<br>
 			.replace("＠","@")
 			</h2>
 			<a href="https://www.facebook.com/qiu.ted.yuan" target="_blank">
@@ -103,7 +103,7 @@ $(document).ready(function () {
 			<a href="https://github.com/QiuTedYuan" target="_blank">
 				<img src="./img/github.png" alt="github" class="social-media-icon">
 			</a>
-			<h5>14 Aug 2024</h5>
+			<h5>3 Sept 2025</h5>
 		 </div>
      `;
 });
