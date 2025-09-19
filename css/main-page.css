@@ -83,6 +83,7 @@ body {
     background-color: rgb(240, 240, 240);
 	padding-top: 30px;
 	padding-bottom: 30px;
+	font-size:16px;
 }
 
 #writing-section a {
@@ -148,4 +149,28 @@ body {
 
 .clear {
   clear: both;
+}
+
+/* keep the ol markers/numbers — li remains a list-item */
+#pub-list li { margin-bottom: 0.9rem; }
+
+/* grid inside each li */
+.pub-item {
+display: grid;
+grid-template-columns: 9ch 1fr; /* first column for (CONF 'YY) */
+column-gap: 2rem;
+align-items: start;
+}
+
+.pub-item .conf {
+white-space: nowrap; /* keep the (SIGMOD '21) on one line */
+}
+
+@media (max-width: 600px) {
+  .pub-item {
+    grid-template-columns: 1fr; /* only one column */
+  }
+  .pub-list .conf {
+    margin-bottom: 0.25em; /* space between conf and details */
+  }
 }
