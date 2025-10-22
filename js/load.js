@@ -74,7 +74,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	    	fullConf: "Conference on Neural Information Processing Systems",
 	    	fullDate: "December 2025",
 	    	remarks: '<strong style="color: #CC0000">Spotlight (3%)</strong>',
-	    	link: '[<a href="https://arxiv.org/abs/2209.01387" target="_blank">Full Version</a>]'
+	    	link: '[<a href="https://arxiv.org/abs/2209.01387" target="_blank">Full Version</a>] [<a href="file/slides/neurips25.pptx" target="_blank">Slides</a>]'
 	    },{
 	    	conf: "NeurIPS",
 	    	authors: "Dajun Sun, Wei Dong, <strong>Yuan Qiu</strong>, Ke Yi and Graham Cormode",
@@ -87,21 +87,21 @@ window.addEventListener("DOMContentLoaded", function () {
 	    	title: "Approximate DBSCAN under Differential Privacy",
 	    	fullConf: "ACM SIGMOD International Conference on Management of Data",
 	    	fullDate: "June 2025",
-	    	link: '[<a href="https://arxiv.org/abs/2508.08749" target="_blank">PDF</a>] [<a href="file/sigmod25_poster.pdf" target="_blank">Poster</a>]'
+	    	link: '[<a href="https://arxiv.org/abs/2508.08749" target="_blank">PDF</a>] [<a href="file/poster/sigmod25.pdf" target="_blank">Poster</a>]'
 	    },{
 	    	conf: "SIGMOD",
 	    	authors: "Dajun Sun, Wei Dong, <strong>Yuan Qiu</strong> and Ke Yi",
 	    	title: "Personalized Truncation for Personalized Privacy",
 	    	fullConf: "ACM SIGMOD International Conference on Management of Data",
 	    	fullDate: "June 2025",
-	    	link: '[<a href="https://dl.acm.org/doi/10.1145/3698825" target="_blank">PDF</a>] [<a href="file/sigmod25_poster_sun.pdf" target="_blank">Poster</a>]'
+	    	link: '[<a href="https://dl.acm.org/doi/10.1145/3698825" target="_blank">PDF</a>] [<a href="file/poster/sigmod25_sun.pdf" target="_blank">Poster</a>]'
 	    },{
 	    	conf: "VLDB",
 	    	authors: "Ziyue Huang, <strong>Yuan Qiu</strong>, Ke Yi and Graham Cormode",
 	    	title: "Frequency Estimation Under Multiparty Differential Privacy: One-shot and Streaming",
 	    	fullConf: "International Conference on Very Large Databases",
 	    	fullDate: "September 2022",
-	    	link: '[<a href="https://dl.acm.org/doi/10.14778/3547305.3547312" target="_blank">PDF</a>] [<a href="file/vldb21_poster.pdf" target="_blank">Poster</a>]'
+	    	link: '[<a href="https://dl.acm.org/doi/10.14778/3547305.3547312" target="_blank">PDF</a>] [<a href="file/poster/vldb21.pdf" target="_blank">Poster</a>]'
 	    },{
 	    	conf: "KDD",
 	    	authors: "<strong>Yuan Qiu</strong>, Wei Dong, Ke Yi, Bin Wu and Feifei Li",
@@ -115,7 +115,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	    	title: "Weighted Distinct Sampling: Cardinality Estimation for SPJ Queries",
 	    	fullConf: "ACM SIGMOD International Conference on Management of Data",
 	    	fullDate: "June 2021",
-	    	link: '[<a href="https://dl.acm.org/doi/10.1145/3448016.3452821" target="_blank">PDF</a>] [<a href="http://home.cse.ust.hk/~yike/spj-full.pdf" target="_blank">Full Version</a>]'
+	    	link: '[<a href="https://dl.acm.org/doi/10.1145/3448016.3452821" target="_blank">PDF</a>] [<a href="http://home.cse.ust.hk/~yike/spj-full.pdf" target="_blank">Full Version</a>] [<a href="file/slides/sigmod21.pptx" target="_blank">Slides</a>]'
 	    },{
 	    	conf: "EDBT",
 	    	authors: "<strong>Yuan Qiu</strong>, Serafeim Papadias and Ke Yi",
@@ -123,7 +123,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	    	fullConf: "International Conference on Extending DataBase Technology",
 	    	fullDate: "March 2019",
 	    	remarks: "Short Paper",
-	    	link: '[<a href="https://openproceedings.org/2019/conf/edbt/EDBT19_paper_224.pdf" target="_blank">PDF</a>] [<a href="file/edbt19_poster.pdf" target="_blank">Poster</a>]'
+	    	link: '[<a href="https://openproceedings.org/2019/conf/edbt/EDBT19_paper_224.pdf" target="_blank">PDF</a>] [<a href="file/poster/edbt19.pdf" target="_blank">Poster</a>]'
 	    });
 	    pubstr = []
 	    for (const pub of publist) {
