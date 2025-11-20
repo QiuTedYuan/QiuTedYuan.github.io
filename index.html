@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Yuan Qiu Personal Web page">
-    <meta name="author" content="Yuan Qiu">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="Yuan Qiu Personal Web page" name="description">
+    <meta content="Yuan Qiu" name="author">
     <title>Yuan Qiu</title>
     <!-- Bootstrap core CSS -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link href="./css/bootstrap.min.css" media="screen" rel="stylesheet">
+    <link href="./css/bootstrap-theme.min.css" rel="stylesheet">
 
     <link href="./css/dropdowns-enhancement.min.css" rel="stylesheet">
     <link href="./css/bootstrap.icon-large.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="./css/main-page.css" rel="stylesheet">
-
-
 
     <script src="./js/jquery-1.11.0.min.js"></script>
     <script src="./js/load.js"></script>
@@ -27,6 +25,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
 
 </head>
+
 <body>
 <!--navigation section-->
 <section class="nav-section container-fluid" id='navigation-section'>
@@ -34,76 +33,108 @@
 
 <!--content section-->
 <div class="container-fluid">
-
+    <!--about-me-->
     <section class="row" id="about-me-section">
-        <!--about-me-->
-        <div class="col-xs-10 col-sm-10 col-md-8 col-lg-8
-                    col-xs-offset-1 col-sm-offset-1 col-md-offset-2 col-lg-offset-2">
-
-            <h4 class="personal-information text-center">Yuan Qiu (<span style="font-family: Fangsong, STFangsong, serif;">邱远</span>), Associate Researcher</h4>
-            <h4 class="personal-information text-center"><a href="https://cyber.seu.edu.cn/" target="_blank">School of Cyber Science and Engineering</a>, <a href="https://www.seu.edu.cn/" target="_blank">Southeast University (SEU)</a></h4>
-
-            <!--portrait-->
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 text-center">
-                <img id="profile-picture" src="img/photo25_min.jpg" alt="profile-picture" class="img-thumbnail img-responsive">
-                <h4></h4>
-                <!--social media-->
-                <ul class="list-unstyled row text-center">
-                    <li class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center">
-                        <a href="https://www.facebook.com/qiu.ted.yuan" target="_blank">
-                            <img src="./img/facebook.png" alt="facebook" class="social-media-icon">
-                        </a>
-                    </li>
-                    <li class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                        <a href="https://www.linkedin.com/in/yuan-qiu-83651910a/" target="_blank">
-                            <img src="./img/linkedin.png" alt="linkedin" class="social-media-icon">
-                        </a>
-                    </li>
-                    <li class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                        <a href="https://www.github.com/QiuTedYuan" target="_blank">
-                            <img src="./img/github.png" alt="github" class="social-media-icon">
-                        </a>
-                    </li>
-                </ul><!--social media-->
-            </div><!--portrait-->
-
-            <!--paragraph-->
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-9" id="about-me">
-              <p>
-                    Prior to joining SEU, I was a research fellow in <a href="https://www.comp.nus.edu.sg//" target="_blank">School of Computing</a> of <a href="https://www.nus.edu.sg/" target="_blank">National University of Singapore</a> (NUS) and CNRS@CREATE, supervised by <a href="https://www.comp.nus.edu.sg/~xiaoxk/" target="_blank">Prof. Xiaokui Xiao</a>.
-                    <br/><br/>
-                    I was also a Big Data Engineer working for <a href="https://www.volcengine.com/" target="_blank">Volcano Engine</a> of <a href="https://www.bytedance.com/" target="_blank">ByteDance</a>.
-                    <br/><br/>
-                    I received my Ph.D. degree from the <a href="https://cse.hkust.edu.hk/" target="_blank">Department of Computer Science and Engineering</a> of the <a href="https://hkust.edu.hk/" target="_blank">Hong Kong University of Science and Technology</a> (HKUST), under the supervision of <a href="https://www.cse.ust.hk/~yike/" target="_blank">Prof. Ke Yi</a>.
-                    I also received my B.Sc. degree in Mathematics and Economics, and in Computer Science with First Class Honors from HKUST.
-                    <br/><br/>
-                    My research interests include: database theory and systems; data security and privacy; data sketching and sampling; data streams; data structures.
-                </p>
-            </div><!--paragraph-->
-        </div><!--about-me-->
-    </section>
+        <div class="col-xs-10 col-sm-10 col-md-8 col-lg-8 col-xs-offset-1 col-sm-offset-1 col-md-offset-2 col-lg-offset-2">
+            <header class="about-me-header">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h1 class="about-me-title">Yuan <span style="font-weight: 700 !important">Qiu</span> <span
+                            style="font-family: Fangsong, STFangsong, serif;">邱远</span></h1>
+                    <p>Professor, School of Cyber Science and Engineering, Southeast University</p>
+                </div>
+            </header>
+            <article>
+                <!--portrait-->
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-lg-push-9 text-center">
+                    <picture>
+                        <img alt="profile-picture" class="img-thumbnail img-responsive" id="profile-picture"
+                             src="img/photo25_shanghai.jpg">
+                    </picture>
+                    <p></p>
+                    <ul class="list-unstyled row text-center">
+                        <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <a href="https://cyber.seu.edu.cn/qy/" target="_blank">
+                                <img alt="seu" class="social-media-icon" src="./img/seu.png">
+                            </a>
+                        </li>
+                        <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <a href="https://www.facebook.com/qiu.ted.yuan" target="_blank">
+                                <img alt="facebook" class="social-media-icon" src="./img/facebook.png">
+                            </a>
+                        </li>
+                        <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <a href="https://www.linkedin.com/in/yuan-qiu-83651910a/" target="_blank">
+                                <img alt="linkedin" class="social-media-icon" src="./img/linkedin.png">
+                            </a>
+                        </li>
+                        <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <a href="https://www.github.com/QiuTedYuan" target="_blank">
+                                <img alt="github" class="social-media-icon" src="./img/github.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--/end portrait-->
+                <!--paragraph-->
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9 col-lg-pull-3" id="about-me">
+                    <p>
+                        Yuan Qiu is a Young Chief Professor in the <a href="https://cyber.seu.edu.cn/" target="_blank">School
+                        of Cyber Science and Engineering</a> at <a href="https://www.seu.edu.cn/" target="_blank">Southeast
+                        University (SEU)</a>, Nanjing, China.
+                        Prior to joining SEU in 2025, he was a research fellow hosted by <a
+                            href="https://www.comp.nus.edu.sg/~xiaoxk/" target="_blank">Prof. Xiaokui Xiao</a> from the
+                        <a href="https://www.comp.nus.edu.sg/" target="_blank">School of Computing</a> at the <a
+                            href="https://www.nus.edu.sg/" target="_blank">National University of Singapore (NUS)</a>
+                        and <a href="https://www.lri.fr/~cautis/" target="_blank">Prof. Bogdan Cautis</a> from the <a
+                            href="https://www.cnrsatcreate.cnrs.fr/" target="_blank">French National Centre for
+                        Scientific Research (CNRS@CREATE)</a> at Singapore.
+                        He also worked as a Big Data Engineer for <a href="https://www.volcengine.com/" target="_blank">Volcano
+                        Engine</a> of <a href="https://www.bytedance.com/" target="_blank">ByteDance</a> in Hangzhou,
+                        China.
+                    </p>
+                    <p>
+                        Yuan obtained his Ph.D. (2022) and M.Phil. (2019) degrees in Computer Science and Engineering
+                        from the <a href="https://hkust.edu.hk/" target="_blank">Hong Kong University of Science and
+                        Technology (HKUST)</a>,
+                        both under the supervision of <a href="https://www.cse.ust.hk/~yike/" target="_blank">Prof. Ke
+                        Yi</a>.
+                        During undergraduate, he double majored in Mathematics and Economics, and in Computer Science.
+                        He obtained his B.Sc. (2017) degree with First Class Honors from HKUST.
+                    </p>
+                    <p>
+                        Yuan's research is devoted to designing practical-and-rigorous algorithms for Database Systems
+                        (DB) and Private Query Processing (S&P).
+                        He likes working with well-defined problems that have provable lower and upper bounds through
+                        non-trivial analysis.
+                        His research interests include: database theory and systems; data security and privacy; data
+                        sketching and sampling; data streams; data structures.
+                    </p>
+                </div><!--paragraph-->
+            </article>
+        </div>
+    </section><!--/end about-me section-->
 
     <!--publication-->
-    <section class="row content-section" id="writing-section">
-        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10
-                    col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+    <section class="row content-section" id="publication-section">
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
             <h1 class="section-title text-center">Publications</h1>
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        		    <p class="text-center">
+                    <p class="text-center">
                         [<a href="https://dblp.uni-trier.de/pid/166/6079-2.html" target="_blank">DBLP</a>]
                         [<a href="https://orcid.org/0000-0002-3488-6386" target="_blank">ORCID</a>]
-                        [<a href="https://scholar.google.com/citations?user=G3Q_MzIAAAAJ" target="_blank">Google Scholar</a>]
-                        [<a href="https://www.semanticscholar.org/author/Yuan-Qiu/2087352728" target="_blank">Semantic Scholar</a>]
-        		    </p>
-                    <ol reversed id="pub-list"></ol>
+                        [<a href="https://scholar.google.com/citations?user=G3Q_MzIAAAAJ" target="_blank">Google
+                        Scholar</a>]
+                        [<a href="https://www.semanticscholar.org/author/Yuan-Qiu/2087352728" target="_blank">Semantic
+                        Scholar</a>]
+                    </p>
+                    <ol id="pub-list" reversed></ol>
                 </div>
             </div>
         </div>
-    </section><!--/research paper section-->
+    </section><!--/end publication section-->
 
     <!--work experience section-->
-    <section class="row content-section" id="industry-section">
+    <section class="row content-section" id="work-section">
         <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10
                     col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
             <h1 class="section-title text-center">Work Experience</h1>
@@ -111,42 +142,56 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <ul>
                         <li>
-                            <span><strong>Associate Researcher</strong>, SEU, Nanjing, China.</span>
-                            <span class="align-right">September 2025 - Present</span><div style="clear:both"/>
+                            <span><strong>Young Chief Professor</strong>, SEU, Nanjing, China.</span>
+                            <span class="align-right">September 2025 - Present</span>
+                            <div style="clear:both"></div>
+                            <ul>
+                                <li>Differential Privacy, Sampling, Differential Oblivious</li>
+                            </ul>
                         </li>
                         <li>
-                            <span><strong>Research Fellow</strong>, SoC@NUS & <a href="https://www.cnrsatcreate.cnrs.fr/about-us/" target="_blank">CNRS</a>@<a href="https://www.create.edu.sg/" target="_blank">CREATE</a>, Singapore.</span>
-                            <span class="align-right">July 2024 - July 2025</span><div style="clear:both"/>
+                            <span><strong>Research Fellow</strong>,  <a href="https://www.comp.nus.edu.sg/" target="_blank">SoC</a>@<a
+                                    href="https://www.nus.edu.sg/" target="_blank">NUS</a> & <a
+                                    href="https://www.cnrsatcreate.cnrs.fr/about-us/" target="_blank">CNRS</a>@<a
+                                    href="https://www.create.edu.sg/" target="_blank">CREATE</a>, Singapore.</span>
+                            <span class="align-right">July 2024 - July 2025</span>
+                            <div style="clear:both"></div>
                             <ul>
-                                <li>Supervisor: <a href="https://www.comp.nus.edu.sg/~xiaoxk/" target="_blank">Prof. Xiaokui Xiao</a> and <a href="https://www.lri.fr/~cautis/" target="_blank">Prof. Bogdan Cautis</a></li>
+                                <li>Hosted by: <a href="https://www.comp.nus.edu.sg/~xiaoxk/" target="_blank">Prof.
+                                    Xiaokui Xiao</a> and <a href="https://www.lri.fr/~cautis/" target="_blank">Prof.
+                                    Bogdan Cautis</a></li>
                                 <li>Differential Privacy, Zeroth-Order Optimization, Sampling</li>
                             </ul>
                         </li>
                         <li>
-                            <strong>Postdoctoral Fellow</strong>, HKUST, Hong Kong SAR, China.
-                            <span class="align-right">January 2024 - June 2024</span><div style="clear:both"/>
+                            <strong>Postdoctoral Fellow</strong>, <a href="https://hkust.edu.hk/" target="_blank">HKUST</a>, Hong Kong SAR, China.
+                            <span class="align-right">January 2024 - June 2024</span>
+                            <div style="clear:both"></div>
                             <ul>
-                                <li>Supervisor: <a href="https://www.cse.ust.hk/~yike/" target="_blank">Prof. Ke Yi</a>
+                                <li>Hosted by: <a href="https://www.cse.ust.hk/~yike/" target="_blank">Prof. Ke Yi</a>
                                 <li>Differential Privacy, Federated Learning, Secure Multiparty Computation</li>
                             </ul>
                         </li>
                         <li>
                             <strong>Big Data Engineer</strong>, ByteDance, Hangzhou, China.
-                            <span class="align-right">September 2022 - September 2023</span><div style="clear:both"/>
+                            <span class="align-right">September 2022 - September 2023</span>
+                            <div style="clear:both"></div>
                             <ul>
                                 <li>Query Optimization, Distributed Databases, Workload Analysis</li>
                             </ul>
                         </li>
                         <li>
                             <strong>Intern Engineer</strong>, Alibaba Group, Hangzhou, China.
-                            <span class="align-right">April 2021 - August 2021</span><div style="clear:both"/>
+                            <span class="align-right">April 2021 - August 2021</span>
+                            <div style="clear:both"></div>
                             <ul>
                                 <li>Query Optimization, AI4DB, Data Sketching</li>
                             </ul>
                         </li>
                         <li>
                             <strong>Intern Engineer</strong>, Alibaba Group, Hangzhou, China.
-                            <span class="align-right">January 2019 - May 2019</span><div style="clear:both"/>
+                            <span class="align-right">January 2019 - May 2019</span>
+                            <div style="clear:both"></div>
                             <ul>
                                 <li>Query Optimization, Data Sketching, Approximate Query Processing</li>
                             </ul>
@@ -166,38 +211,66 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <ul>
                         <li>
-                            <strong>Teaching Assistant</strong> for COMP 3711H, Honors Design and Analysis of Algorithms, Undergraduate level, HKUST.
-                            <span class="align-right">Fall 2017, Spring 2018, Fall 2018</span><div style="clear:both"/>
+                            <strong>Teaching Assistant</strong> for COMP 3711H, Honors Design and Analysis of
+                            Algorithms, Undergraduate level, HKUST.
+                            <span class="align-right">Fall 2017, Spring 2018, Fall 2018</span>
+                            <div style="clear:both"></div>
                         </li>
                         <li>
-                            <strong>Teaching Assistant</strong> for MSBD 5003, Big Data Computing, Graduate Level, HKUST.
-                            <span class="align-right">Fall 2019, Fall 2020</span><div style="clear:both"/>
+                            <strong>Teaching Assistant</strong> for MSBD 5003, Big Data Computing, Graduate Level,
+                            HKUST.
+                            <span class="align-right">Fall 2019, Fall 2020</span>
+                            <div style="clear:both"></div>
                         </li>
                         <li>
-                            <strong>Teaching Assistant</strong> for COMP 2711, Discrete Mathematical Tools for Computer Science, Undergraduate Level, HKUST.
-                            <span class="align-right">Spring 2022</span><div style="clear:both"/>
+                            <strong>Teaching Assistant</strong> for COMP 2711, Discrete Mathematical Tools for Computer
+                            Science, Undergraduate Level, HKUST.
+                            <span class="align-right">Spring 2022</span>
+                            <div style="clear:both"></div>
                         </li>
                         <li>
-                            <strong>Teaching Assistant</strong> for Information Systems and Big Data, SZ-HK Collaborative Innovation Research Institude, HKUST.
-                            <span class="align-right">Summer 2022</span><div style="clear:both"/>
+                            <strong>Teaching Assistant</strong> for Information Systems and Big Data, SZ-HK
+                            Collaborative Innovation Research Institute, HKUST.
+                            <span class="align-right">Summer 2022</span>
+                            <div style="clear:both"></div>
                         </li>
                         <li>
-                            <strong>Teaching Assistant</strong> for Basics of Cloud Computing and Big Data, SZ-HK Collaborative Innovation Research Institude, HKUST.
-                            <span class="align-right">February 2022</span><div style="clear:both"/>
+                            <strong>Teaching Assistant</strong> for Basics of Cloud Computing and Big Data, SZ-HK
+                            Collaborative Innovation Research Institute, HKUST.
+                            <span class="align-right">February 2022</span>
+                            <div style="clear:both"></div>
                         </li>
                         <li>
-                            <strong>Teaching Assistant</strong> for Big Data Computing with Hadoop and Spark, Harbour Education.
-                            <span class="align-right">Summer 2021</span><div style="clear:both"/>
+                            <strong>Teaching Assistant</strong> for Big Data Computing with Hadoop and Spark, Harbour
+                            Education.
+                            <span class="align-right">Summer 2021</span>
+                            <div style="clear:both"></div>
                         </li>
                         <li>
                             <strong>Math Tutor</strong>, Math Department, HKUST.
-                            <span class="align-right">Fall 2015</span><div style="clear:both"/>
+                            <span class="align-right">Fall 2015</span>
+                            <div style="clear:both"></div>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section><!--/teaching experience section-->
+
+    <!--talk section-->
+    <section class="row content-section" id="talk-section">
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10
+                    col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+            <h1 class="section-title text-center">Talks</h1>
+            <ol id="talk-list">
+                <li>
+                    Query Processing under Differential Privacy, IEEE CRESS 2025. [<a href="file/slides/251127.pptx" target="_blank">Slides</a>]
+                    <span class="align-right">Nanjing, China</span>
+                    <div style="clear:both"></div>
+                </li>
+            </ol>
+        </div>
+    </section><!--/talk section-->
 
     <section class="row" id="contact-section">
     </section>

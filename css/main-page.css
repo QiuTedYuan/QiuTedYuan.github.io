@@ -1,176 +1,156 @@
 body {
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-.nav>li.active>a, .nav>li.active>a:focus, .nav>li.active>a:hover {
-	opacity: .5;
+body h1, body h2, body h3, body h4, body h5, body h6 {
+    scroll-margin-top: 66px
 }
 
-.nav-section{
-	padding-top: 20px;
-	background-color: white;
-	padding-bottom:20px;
+.nav > li.active > a, .nav > li.active > a:focus, .nav > li.active > a:hover {
+    opacity: .5;
 }
 
-.personal-information{
-	width:100%;
-	font-weight: 400;
-	font-size:20px;
-	color:white;
+.nav-section {
+    padding-top: 20px;
+    background-color: white;
+    padding-bottom: 20px;
 }
 
-.nav>li>a {
-	font-size: 1.2em;
-	font-weight: 300;
+.nav > li > a {
+    font-size: 1.2em;
+    font-weight: 300;
     color: rgba(48, 48, 47, 1);
 }
 
-.nav>li>a:hover, .nav>li>a:focus {
+.nav > li > a:hover, .nav > li > a:focus {
     background-color: white;
     color: rgba(48, 48, 47, .5);
 }
 
-.section-title {
-	margin-bottom: 30px;
-	font-weight: 100;
-}
-
-.overflow-hidden {
-	overflow: hidden;
-}
-
-.custom-thumbnail:hover{
-	-webkit-transition: box-shadow 0.2s ease-in-out;
-	transition: box-shadow 0.2s ease-in-out;
-	box-shadow: 0 0 8px #5e5e5e;
-}
-
-.social-media-icon{
-	max-width: 40px;
-	max-height: 40px;
-}
-
-.writing {
-	margin-bottom: 15px;
-	margin-top: 15px;
-}
-
-#linkedin-icon {
-	margin-left: 30px;
-	margin-right: 30px;
-}
-
 #about-me-section {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	background-color: #0f1c20;
-	color: rgba(255, 255, 255, 1);
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-	font-size: 1.3em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #0f1c20;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.3em;
 }
 
-#about-me a{
-	color: rgba(255, 255, 255, 1);
-	border-bottom: 1px solid rgba(255, 255, 255, 1);
+#about-me a {
+    color: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
 }
 
-#about-me a:hover, #about-me a, #about-me a:visited:hover, #about-me a:visited{
-	text-decoration: none;
+#about-me a:hover, #about-me a, #about-me a:visited:hover, #about-me a:visited {
+    text-decoration: none;
 }
 
-#writing-section {
+#about-me picture {
+    padding-bottom: 30px;
+}
+
+.social-media-icon {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.section-title {
+    margin-bottom: 30px;
+    font-weight: 100;
+}
+
+#publication-section {
     background-color: rgb(240, 240, 240);
-	padding-top: 30px;
-	padding-bottom: 30px;
-	font-size:16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 16px;
 }
 
-#writing-section a {
-	color: rgba(0, 0, 0, 1);
+#work-section {
+    padding-top: 30px;
+    background-color: rgb(230, 230, 230);
+    padding-bottom: 50px;
 }
 
-.writing-title {
-	font-weight: 400;	
+#work-section a {
+    color: rgba(0, 0, 0, 1);
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 
-#industry-section {
-	padding-top: 30px;
-	background-color:rgb(230, 230, 230);
-	padding-bottom: 50px;
-}
-
-#industry-section a {
-	color: rgba(0, 0, 0, 1);
-	border-bottom: 1px solid rgba(0, 0, 0, 1);
+#work-section a:hover, #about-me a, #about-me a:visited:hover, #about-me a:visited {
+    text-decoration: none;
 }
 
 #teaching-section {
-	padding-top: 30px;
-	background-color: rgb(240, 240, 240);
-	padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: rgb(240, 240, 240);
+    padding-bottom: 30px;
 }
 
 #contact-section {
-	padding-top: 30px;
-	padding-bottom: 25px;
+    padding-top: 30px;
+    padding-bottom: 25px;
 }
 
-#contact-section h2{
-	margin-top: 40px;
-	font-weight: 400;
+#contact-section h2 {
+    margin-top: 40px;
+    font-weight: 400;
 }
 
-#contact-section>div>h2>a{
-	color: rgba(0, 0, 0, 1);
-	border-bottom: 1px solid rgba(0, 0, 0, 1);
+#contact-section > div > h2 > a {
+    color: rgba(0, 0, 0, 1);
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 
-#contact-section .social-media-icon{
-	margin-top: 30px;
+#contact-section .social-media-icon {
+    margin-top: 30px;
 }
 
-#contact-section a:hover,#contact-section a, #contact-section a:visited:hover, #contact-section a:visited{
-	text-decoration: none;
+#contact-section a:hover, #contact-section a, #contact-section a:visited:hover, #contact-section a:visited {
+    text-decoration: none;
 }
 
-.align-right{
-  display: inline-block;
-  float: right;
+.align-right {
+    display: inline-block;
+    float: right;
 }
 
 .circle {
     border: 2px solid red;
     background-color: #FFFFFF;
     height: 100px;
-    border-radius:50%;
+    border-radius: 50%;
     width: 100px;
 }
 
 .clear {
-  clear: both;
+    clear: both;
 }
 
 /* keep the ol markers/numbers — li remains a list-item */
-#pub-list li { margin-bottom: 0.9rem; }
+#pub-list li {
+    margin-bottom: 0.9rem;
+}
 
 /* grid inside each li */
 .pub-item {
-display: grid;
-grid-template-columns: 9ch 1fr; /* first column for (CONF 'YY) */
-column-gap: 2rem;
-align-items: start;
+    display: grid;
+    grid-template-columns: 9ch 1fr; /* first column for (CONF 'YY) */
+    column-gap: 2rem;
+    align-items: start;
 }
 
 .pub-item .conf {
-white-space: nowrap; /* keep the (SIGMOD '21) on one line */
+    white-space: nowrap; /* keep the (SIGMOD '21) on one line */
 }
 
 @media (max-width: 600px) {
-  .pub-item {
-    grid-template-columns: 1fr; /* only one column */
-  }
-  .pub-list .conf {
-    margin-bottom: 0.25em; /* space between conf and details */
-  }
+    .pub-item {
+        grid-template-columns: 1fr; /* only one column */
+    }
+
+    .pub-list .conf {
+        margin-bottom: 0.25em; /* space between conf and details */
+    }
 }
