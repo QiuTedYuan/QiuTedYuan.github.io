@@ -2,6 +2,13 @@ window.addEventListener("DOMContentLoaded", function () {
     if (document.getElementById("pub-list")) {
         const publist = []
         publist.push({
+            conf: "SIGMOD",
+            authors: "<strong>Yuan Qiu</strong>, Xiaokui Xiao and Yin Yang",
+            title: "DP-S4S: Accurate and Scalable Select-Join-Aggregate Query Processing with User-Level Differential Privacy",
+            fullConf: "ACM SIGMOD International Conference on Management of Data",
+            fullDate: "June 2026",
+            link: '[<a href="https://arxiv.org/abs/2603.14994" target="_blank">PDF</a>] [<a href="https://dl.acm.org/doi/10.1145/3802042" target="_blank">Conf Version</a>]'
+        }, {
             conf: "NeurIPS",
             authors: "<strong>Yuan Qiu</strong> and Ke Yi",
             title: "Differential Privacy on Fully Dynamic Streams",
