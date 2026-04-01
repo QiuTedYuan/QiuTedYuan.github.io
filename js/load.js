@@ -48,7 +48,7 @@ $(document).ready(function () {
 			(yuanqiu＠seu.edu.cn)<br>
 			.replace("＠","@")
 			</h2>
-			<h5>20 Nov 2025</h5>
+			<h5>1 Apr 2026</h5>
 		 </div>
      `;
 });
