@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", function () {
             title: "DP-S4S: Accurate and Scalable Select-Join-Aggregate Query Processing with User-Level Differential Privacy",
             fullConf: "ACM SIGMOD International Conference on Management of Data",
             fullDate: "June 2026",
-            link: '[<a href="https://arxiv.org/abs/2603.14994" target="_blank">PDF</a>] [<a href="https://dl.acm.org/doi/10.1145/3802042" target="_blank">Conf Version</a>]'
+            link: '[<a href="https://arxiv.org/abs/2603.14994" target="_blank">PDF</a>] [<a href="https://dl.acm.org/doi/10.1145/3802042" target="_blank">Conf Version</a>] [<a href="file/slides/sigmod26.pdf" target="_blank">Slides</a>]'
         }, {
             conf: "NeurIPS",
             authors: "<strong>Yuan Qiu</strong> and Ke Yi",
@@ -15,7 +15,7 @@ window.addEventListener("DOMContentLoaded", function () {
             fullConf: "Conference on Neural Information Processing Systems",
             fullDate: "December 2025",
             remarks: '<strong style="color: #CC0000">Spotlight (3%)</strong>',
-            link: '[<a href="https://openreview.net/forum?id=piM21sPyVL" target="_blank">PDF</a>] [<a href="file/poster/neurips25.pdf" target="_blank">Poster</a>] [<a href="file/slides/neurips25.pptx" target="_blank">Slides</a>]',
+            link: '[<a href="https://openreview.net/forum?id=piM21sPyVL" target="_blank">PDF</a>] [<a href="file/poster/neurips25.pdf" target="_blank">Poster</a>] [<a href="file/slides/neurips25.pdf" target="_blank">Slides</a>]',
         }, {
             conf: "NeurIPS",
             authors: "Dajun Sun, Wei Dong, <strong>Yuan Qiu*</strong>, Ke Yi and Graham Cormode",
