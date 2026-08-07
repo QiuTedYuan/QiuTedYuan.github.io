@@ -15,14 +15,14 @@ window.addEventListener("DOMContentLoaded", function () {
             fullConf: "Conference on Neural Information Processing Systems",
             fullDate: "December 2025",
             remarks: '<strong style="color: #CC0000">Spotlight (3%)</strong>',
-            link: '[<a href="https://openreview.net/forum?id=piM21sPyVL" target="_blank">PDF</a>] [<a href="file/poster/neurips25.pdf" target="_blank">Poster</a>] [<a href="file/slides/neurips25.pdf" target="_blank">Slides</a>]',
+            link: '[<a href="https://doi.org/10.52202/085713-5078" target="_blank">PDF</a>] [<a href="file/poster/neurips25.pdf" target="_blank">Poster</a>] [<a href="file/slides/neurips25.pdf" target="_blank">Slides</a>]',
         }, {
             conf: "NeurIPS",
             authors: "Dajun Sun, Wei Dong, <strong>Yuan Qiu*</strong>, Ke Yi and Graham Cormode",
             title: "Sum Estimation under Personalized Local Differential Privacy",
             fullConf: "Conference on Neural Information Processing Systems",
             fullDate: "December 2025",
-            link: '[<a href="https://openreview.net/forum?id=AXlquRUO0S" target="_blank">PDF</a>] [<a href="file/poster/neurips25sun.pdf" target="_blank">Poster</a>]',
+            link: '[<a href="https://doi.org/10.52202/085713-0360" target="_blank">PDF</a>] [<a href="file/poster/neurips25sun.pdf" target="_blank">Poster</a>]',
         }, {
             conf: "SIGMOD",
             authors: "<strong>Yuan Qiu</strong> and Ke Yi",
