@@ -58,3 +58,21 @@ table {
 th {
   font-weight: normal;
 }
+
+#course-info-section {
+	padding-top: 30px;
+	background-color: rgb(230, 230, 230);
+	padding-bottom: 30px;
+}
+
+#announcement-section {
+	padding-top: 30px;
+	background-color: rgb(240, 240, 240);
+	padding-bottom: 30px;
+}
+
+#schedule-section {
+	padding-top: 30px;
+	background-color: rgb(230, 230, 230);
+	padding-bottom: 30px;
+}

@@ -18,6 +18,7 @@ $(document).ready(function () {
                         <li class="inactive" id="index"><a href="index.html">Home</a></li>
                         <li class="inactive" id="resume"><a href="resume.html">Resume</a></li>
                         <li class="inactive" id="gallery"><a href="gallery.html">Gallery</a></li>
+                        <li class="inactive" id="cpp"><a href="cpp.html">C++</a></li>
                         <li class="inactive" id="blog"><a href="blog/index.html">B-side</a></li>
                     </ul>
                 </div>
@@ -34,6 +35,9 @@ $(document).ready(function () {
             break;
         case "gallery.html":
             document.getElementById("gallery").className = "active";
+            break;
+        case "cpp.html":
+            document.getElementById("cpp").className = "active";
             break;
     }
 
