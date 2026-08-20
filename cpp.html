@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
@@ -17,7 +17,7 @@
 
     <!-- Custom styles for this template -->
     <link href="./css/main-page.css" rel="stylesheet">
-    <link href="./css/resume.css" rel="stylesheet">
+    <link href="./css/other-page.css" rel="stylesheet">
 
     <script src="./js/jquery-1.11.0.min.js"></script>
     <script src="./js/load.js"></script>
@@ -34,30 +34,59 @@
 <section class="nav-section container-fluid" id='navigation-section'>
 </section><!--/end navigation section-->
 
-<!--resume section-->
-<div class="container-fluid" id="resume-section" style="display: grid">
+<div class="container-fluid" id="course-section">
     <section class="row" id="course-info-section">
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8
                     col-md-offset-2 col-lg-offset-2">
             <!--work-experience-section-->
-            <h3 class="text-primary resume-category-title">Course Information</h3>
+            <h3 class="text-primary course-heading-title">Course Information</h3>
             <strong>Course Title: </strong> Programming Language I (C++)<br>
             <strong>Course Code: </strong> BJSL0022 <br>
             <strong>Classes: </strong> 57S261, JS126C <br>
             <strong>Lecture: </strong> Th 3-5 (9:50 - 12:15), Rm TBD <br>
-            <strong>Lab: </strong> Th 6-8 (14:00 - 16:35), Rm TBD, <strong>NO LAB on Week 1, 3, 5, 7, 15!</strong> <br>
-            <strong>Instructor: </strong><a href="https://QiuTedYuan.github.io/">Prof. Yuan QIU</a>, Rm 434, Library (N), Jiulonghu Campus, <a href="mailto:yuanqiu@seu.edu.cn">yuanqiu@seu.edu.cn</a><br>
-            <strong>Textbook: </strong> <em>C++ How to Program</em> by Paul Deitel and Harvey Deitel, ISBN: 978-7121290015<br>
+            <strong>Lab: </strong> Th 6-8 (14:00 - 16:35), Rm TBD, <strong>NO LAB on Weeks 1, 3, 5, 7, 15!</strong> <br>
+            <strong>Instructor: </strong><a href="https://QiuTedYuan.github.io/">Prof. Yuan QIU</a>, Rm 434, Library
+            (N), Jiulonghu Campus, <a href="mailto:yuanqiu@seu.edu.cn">yuanqiu@seu.edu.cn</a><br>
+            <strong>Textbook: </strong> <em>C++ How to Program</em> by Paul Deitel and Harvey Deitel, ISBN:
+            978-7121290015<br>
             <strong>Reference: </strong> <em>C++ Primer Plus</em> by Stephen Prata, ISBN: 978-7115279460<br>
+            <strong>Grading Schema: </strong>
+            <ul>
+                <li>40% from continuous assessment, including
+                    <ul>
+                        <li>10% from attendance and in-class discussions</li>
+                        <li>20% from Lab assignments (8 x 2.5% each)</li>
+                        <li>10% from a paper quiz after finishing Chapter 6</li>
+                    </ul>
+                </li>
+                <li>60% from final exam, including
+                    <ul>
+                        <li>40/100 pts for paper exam
+                        <ul>
+                            <li>20 pts for reading code and writing its output</li>
+                            <li>20 pts for completing code</li>
+                        </ul>
+                        </li>
+                        <li>60/100 pts for coding exam
+                            <ul>
+                                <li>2-4 programming problems</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
         </div>
     </section>
 
     <section class="row" id="announcement-section">
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8
                     col-md-offset-2 col-lg-offset-2">
-            <h3 class="text-primary resume-category-title">Announcement</h3>
-            <p><strong>Welcome to C++!</strong></p>
-            <p><strong>Understand by doing.</strong> The only way to learn languages is through serious practice. The only way to appreciate software engineering is to engineer some serious software. And by far the best way to understand programming languages is to implement one.</p>
+            <h3 class="text-primary course-heading-title">Announcements</h3>
+            <ul>
+                <li><strong>Understand by doing.</strong> The only way to learn languages is through serious practice.</li>
+                <li><strong>Welcome to C++!</strong></li>
+            </ul>
         </div><!--/content-->
     </section><!--/end resume section-->
 
@@ -65,40 +94,231 @@
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8
                     col-md-offset-2 col-lg-offset-2">
             <h3 class="text-primary resume-category-title">Schedule</h3>
-            <table style="width:100%">
-                <tr>
-                    <th style='width:10%'><strong>Date</strong></th>
-                    <th style='width:10%'><strong>Week</strong></th>
-                    <th style='width:10%'><strong>Event</strong></th>
-                    <th style='width:35%'><strong>Topic</strong></th>
-                    <th style='width:35%'><strong>Remarks</strong></th>
-                </tr>
 
-                <tr>
-                <td>2026.09.24</td>
-                <td>1</td>
-                <td>Lecture</td>
-                <td>Introduction</td>
-                <td></td>
-                </tr>
+            <input class="form-control" id="inputBox" type="text" placeholder="Filter.."/>
 
-                <tr>
-                    <td>2026.10.01</td>
-                    <td>2</td>
-                    <td>Holiday</td>
-                    <td>National Holiday</td>
-                    <td></td>
-                </tr>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th><strong>Date</strong></th>
+                        <th><strong>Wk</strong></th>
+                        <th><strong>Event</strong></th>
+                        <th><strong>Topic</strong></th>
+                        <th><strong>Note</strong></th>
+                    </tr>
+                    </thead>
+                    <tbody id="scheduleTable">
+                    <tr>
+                        <td>2026.09.24</td>
+                        <td>1</td>
+                        <td>Lecture</td>
+                        <td>Introduction to Computers and C++<br>Input and Output</td>
+                        <td><a href="./file/cpp/ch1.pdf">Chapter 1 Slides</a><br>C++ How to Program: Chap 1, 2<br>C++ Primer Plus: Chap 1, 2</td>
+                    </tr>
 
-                <tr>
-                    <td>2026.10.08</td>
-                    <td>3</td>
-                    <td>Lecture</td>
-                    <td></td>
-                    <td></td>
-                </tr>
+                    <tr>
+                        <td>2026.10.01</td>
+                        <td>2</td>
+                        <td>Holiday</td>
+                        <td>National Holiday</td>
+                        <td></td>
+                    </tr>
 
-            </table>
+                    <tr>
+                        <td>2026.10.08</td>
+                        <td>3</td>
+                        <td>Lecture</td>
+                        <td>Data Type<br>Arithmetic Operation<br>Comparison<br>Assignment<br>If Statement</td>
+                        <td>C++ How to Program: Chap 2, 4.5<br>C++ Primer Plus: Chap 2.2, 3</td>
+                    </tr>
+
+                    <tr>
+                        <td>2026.10.15</td>
+                        <td>4</td>
+                        <td>Lecture</td>
+                        <td>OOP and Class<br>Data Member<br>Member Function<br>Constructor</td>
+                        <td>C++ How to Program: Chap 3.1 - 3.5, 3.8<br>C++ Primer Plus: Chap 10</td>
+                    </tr>
+
+                    <tr>
+                        <td>2026.10.15</td>
+                        <td>4</td>
+                        <td>Lab</td>
+                        <td>Introduction to C++ Programming</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>2026.10.22</td>
+                        <td>5</td>
+                        <td>Lecture</td>
+                        <td>Interface<br>If/Else Statement<br>While Loop<br>Increment Operator</td>
+                        <td>C++ How to Program: Chap 3.6 - 3.7, 4<br>C++ Primer Plus: Chap 5.2, 6.1, 6.4, 9.1</td>
+                    </tr>
+
+                    <tr>
+                        <td>2026.10.29</td>
+                        <td>6</td>
+                        <td>Lecture</td>
+                        <td>For Loop<br>Do/While Loop</td>
+                        <td>C++ How to Program: Chap 5.1 - 5.5<br>C++ Primer Plus: Chap 5.1, 5.3</td>
+                    </tr>
+
+                    <tr>
+                        <td>2026.10.29</td>
+                        <td>6</td>
+                        <td>Lab</td>
+                        <td>Class, Object and std::string</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>2026.11.5</td>
+                        <td>7</td>
+                        <td>Event</td>
+                        <td>Sports Meeting</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>2026.11.12</td>
+                        <td>8</td>
+                        <td>Lecture</td>
+                        <td>Switch/Case<br>Enum<br>Break and Continue<br>Logical Operators</td>
+                        <td>C++ How to Program: Chap 5.6 - 5.10, 6.8<br>C++ Primer Plus: Chap 4.6, 6.2, 6.5 - 6.7</td>
+                    </tr>
+
+                    <tr>
+                        <td>2026.11.12</td>
+                        <td>8</td>
+                        <td>Lab</td>
+                        <td>Control Statements I</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>2026.11.19</td>
+                        <td>9</td>
+                        <td>Lecture</td>
+                        <td>Function<br>Implicit Conversion<br>Random</td>
+                        <td>C++ How to Program: Chap 6.1 - 6.9<br>C++ Primer Plus: Chap 7</td>
+                    </tr>
+
+                    <tr>
+                        <td>2026.11.19</td>
+                        <td>9</td>
+                        <td>Lab</td>
+                        <td>Control Statements II</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>2026.11.26</td>
+                        <td>10</td>
+                        <td>Lecture</td>
+                        <td>Storage Class<br>Linkage<br>Scope<br>Pass by Reference<br>Inline Function</td>
+                        <td>C++ How to Program: Chap 6.10 - 6.15<br>C++ Primer Plus: Chap 8.1 - 8.2, 9.2</td>
+                    </tr>
+
+                    <tr>
+                        <td>2026.11.26</td>
+                        <td>10</td>
+                        <td>Lab</td>
+                        <td>Function I</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>2026.12.03</td>
+                        <td>11</td>
+                        <td>Lecture</td>
+                        <td>Overloading<br>Default Argument<br>Function Template</td>
+                        <td>C++ How to Program: Chap 6.16 - 6.19<br>C++ Primer Plus: Chap 8.3 - 8.5</td>
+                    </tr>
+
+                    <tr>
+                        <td>2026.12.03</td>
+                        <td>11</td>
+                        <td>Lab</td>
+                        <td>Function II</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>2026.12.10</td>
+                        <td>12</td>
+                        <td>Lecture</td>
+                        <td><strong>Midterm Quiz</strong><br>Recursion</td>
+                        <td>C++ How to Program: Chap 6.20 - 6.22<br>C++ Primer Plus: Chap 7.9<br>Further Reading: Introduction to Algorithms: Chap 15</td>
+                    </tr>
+
+                    <tr>
+                        <td>2026.12.10</td>
+                        <td>12</td>
+                        <td>Lab</td>
+                        <td>Recursion and Iteration</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>2026.12.17</td>
+                        <td>13</td>
+                        <td>Lecture</td>
+                        <td>C-style array<br>C-string<br>std::array</td>
+                        <td>C++ How to Program: Chap 7.1 - 7.6, 8.5, 8.10<br>C++ Primer Plus: Chap 4.1 - 4.2, 4.10</td>
+                    </tr>
+
+                    <tr>
+                        <td>2026.12.17</td>
+                        <td>13</td>
+                        <td>Lab</td>
+                        <td>C-style array and std::array</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>2026.12.24</td>
+                        <td>14</td>
+                        <td>Lecture</td>
+                        <td>Sorting and Searching<br>std::vector</td>
+                        <td>C++ How to Program: Chap 7.7 - 7.10, 20<br>C++ Primer Plus: Chap 4.10, 16.7</td>
+                    </tr>
+
+                    <tr>
+                        <td>2026.12.24</td>
+                        <td>14</td>
+                        <td>Lab</td>
+                        <td>Multidimensional arrays and std::vector</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>2026.12.31</td>
+                        <td>15</td>
+                        <td>Lecture</td>
+                        <td>Address<br>Pointer<br>Pass by Pointer</td>
+                        <td>C++ How to Program: Chap 8<br>C++ Primer Plus: Chap 4.7</td>
+                    </tr>
+
+                    <tr>
+                        <td>2027.01.07</td>
+                        <td>16</td>
+                        <td>Lecture</td>
+                        <td>Pointer and Array<br>Selection Sort<br>C-String Functions</td>
+                        <td>C++ How to Program: Chap 8, 22.7 - 22.8<br>C++ Primer Plus: Chap 4.8</td>
+                    </tr>
+
+                    <tr>
+                        <td>2026.01.07</td>
+                        <td>16</td>
+                        <td>Lab</td>
+                        <td>Pointer</td>
+                        <td>Lab ends early at 15:35</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
 
@@ -112,6 +332,15 @@
      ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="./js/bootstrap.min.js"></script>
-
+<script>
+    $(document).ready(function(){
+        $("#inputBox").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#scheduleTable tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
 </body>
 </html>
